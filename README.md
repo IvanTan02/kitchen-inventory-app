@@ -1,5 +1,4 @@
 # FoodX Kitchen Inventory App
-![FoodX Logo](https://github.com/IvanTan02/kitchen-inventory-app/assets/92838040/4f79389d-d18c-4ad6-bf85-0b13805ffc57)
 FoodX is a basic mobile application that allows user to keep track and manage their household food inventory. It is built for Android using Java and SQLite in Android Studio.
 
 ## Table of Contents
