@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inventory"
+        android:icon="@drawable/ic_inventory"
+        android:title="Inventory"
+        />
+    <item
+        android:id="@+id/recipe_recommendation"
+        android:icon="@drawable/ic_recipe_recommend"
+        android:title="Recipes"
+        />
+    <item
+        android:id="@+id/price_comparison"
+        android:icon="@drawable/ic_price_comparison"
+        android:title="Compare Prices"
+        />
+
+    <item
+        android:id="@+id/deal_alert"
+        android:icon="@drawable/ic_deal_alert"
+        android:title="Deals"
+        />
+
+
+</menu>

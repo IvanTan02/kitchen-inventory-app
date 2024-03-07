@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kitchen Inventory"
+        android:textSize="25sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/search_bar"
+        android:background="@drawable/rectangle_frame"
+        android:backgroundTint="@color/search_bar_blue">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_bar"
+        android:background="@drawable/rectangle_frame">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignRight="@id/item_list"
+        android:layout_alignBottom="@+id/item_list"
+        android:background="@drawable/ic_add_foreground"
+        android:backgroundTint="#35D5EA" />
+
+</RelativeLayout>

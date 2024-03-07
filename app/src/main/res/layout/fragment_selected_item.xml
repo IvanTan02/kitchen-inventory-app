@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kitchen Inventory"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="#35D5EA"/>
+
+    <TextView
+        android:id="@+id/itemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Details"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemDetail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rectangle_frame"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Product Name" />
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTitle"
+            android:text="Product Name"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemName"
+            android:hint="Category" />
+
+        <EditText
+            android:id="@+id/itemCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryTitle"
+            android:text="Product Category"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/storageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemCategory"
+            android:hint="Storage" />
+
+        <EditText
+            android:id="@+id/itemStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storageTitle"
+            android:text="Product Storage"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/sDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemStorage"
+            android:hint="Storage Date" />
+
+        <TextView
+            android:id="@+id/storageDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sDateTitle"
+            android:text="Product Storage Date"
+            android:background="@drawable/rectangle_frame"
+            android:padding="2dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storageDate"
+            android:hint="Expiration Date" />
+
+        <TextView
+            android:id="@+id/expiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eDateTitle"
+            android:text="Product Expiry Date"
+            android:background="@drawable/rectangle_frame"
+            android:padding="2dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/quantityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expiryDate"
+            android:hint="Quantity" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantityTitle"
+            android:text="Product Quantity"
+            android:textSize="20sp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/bt_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Modify" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="Delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
